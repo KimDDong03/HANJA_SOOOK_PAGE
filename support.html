@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고객지원 - 한자쏘옥</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1D9E75;--green-light:#E1F5EE;--green-dark:#0F6E56;
+  --text:#1a1a1a;--text-muted:#555;--text-faint:#888;
+  --border:#e0e0e0;--bg:#f7f8f6;--white:#ffffff;
+}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.8}
+header{background:var(--white);border-bottom:1px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:12px}
+.logo-mark{width:36px;height:36px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:18px;font-weight:700;flex-shrink:0}
+.logo-text{font-size:16px;font-weight:700;color:var(--text)}
+.logo-sub{font-size:12px;color:var(--text-faint);margin-left:auto}
+.container{max-width:720px;margin:0 auto;padding:3rem 1.5rem 5rem}
+.page-title{font-size:26px;font-weight:700;margin-bottom:.5rem}
+.page-meta{font-size:13px;color:var(--text-faint);margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--green)}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.25rem}
+h2{font-size:17px;font-weight:700;margin-bottom:1rem;padding-left:.75rem;border-left:3px solid var(--green)}
+p{margin-bottom:.75rem;color:var(--text-muted)}
+ul{padding-left:1.25rem;color:var(--text-muted)}
+li{margin:.3rem 0}
+a{color:var(--green-dark);font-weight:500;text-decoration:none}
+a:hover{text-decoration:underline}
+.contact-grid{display:grid;grid-template-columns:120px 1fr;gap:.45rem 1rem;font-size:14px}
+.label{color:var(--text-faint);font-weight:500}
+.value{color:var(--text-muted)}
+footer{text-align:center;padding:2rem;font-size:12px;color:var(--text-faint);border-top:1px solid var(--border);margin-top:3rem}
+@media(max-width:600px){.container{padding:2rem 1rem 4rem}.page-title{font-size:22px}.contact-grid{grid-template-columns:1fr;gap:.1rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-mark">漢</div>
+  <span class="logo-text">한자쏘옥</span>
+  <span class="logo-sub">브레노스(주)</span>
+</header>
+
+<main class="container">
+  <h1 class="page-title">한자쏘옥 고객지원</h1>
+  <p class="page-meta">앱 이용 문의, 개인정보 문의, 계정 및 데이터 삭제 요청 안내</p>
+
+  <section class="card">
+    <h2>문의 방법</h2>
+    <p>한자쏘옥 앱 이용 중 문제가 발생했거나 도움이 필요한 경우 아래 이메일로 문의해 주세요.</p>
+    <div class="contact-grid">
+      <div class="label">이메일</div>
+      <div class="value"><a href="mailto:noehyoung.kim@gmail.com">noehyoung.kim@gmail.com</a></div>
+      <div class="label">앱 이름</div>
+      <div class="value">한자쏘옥</div>
+      <div class="label">개발사</div>
+      <div class="value">브레노스(주)</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>문의 시 포함하면 좋은 정보</h2>
+    <ul>
+      <li>사용 중인 기기 종류와 OS 버전</li>
+      <li>앱에서 문제가 발생한 화면</li>
+      <li>문제가 반복되는 순서 또는 상황</li>
+      <li>계정 관련 문의인 경우 앱에서 사용한 이름 또는 닉네임</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>법적 안내</h2>
+    <ul>
+      <li><a href="./privacy-policy.html">개인정보처리방침</a></li>
+      <li><a href="./terms-of-service.html">이용약관</a></li>
+      <li><a href="./account-deletion.html">계정 및 데이터 삭제 요청</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  Copyright 2026 Hanja Soook. All rights reserved.
+</footer>
+</body>
+</html>

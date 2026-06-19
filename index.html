@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한자쏘옥 법적 안내</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8f6;
+      --panel: #ffffff;
+      --text: #1a1a1a;
+      --muted: #60666f;
+      --line: #dde3df;
+      --green: #1d9e75;
+      --green-dark: #0f6e56;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+    .bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 44px 20px 72px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0 0 32px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .link-card {
+      display: block;
+      min-height: 132px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: inherit;
+      text-decoration: none;
+    }
+    .link-card:hover {
+      border-color: var(--green);
+    }
+    .link-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--green-dark);
+      font-size: 18px;
+    }
+    .link-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="mark">漢</div>
+      <div class="brand">한자쏘옥</div>
+    </div>
+  </header>
+
+  <main>
+    <h1>한자쏘옥 법적 안내</h1>
+    <p class="lead">앱 이용과 개인정보 처리에 필요한 공개 문서를 제공합니다.</p>
+
+    <section class="links" aria-label="공개 문서">
+      <a class="link-card" href="./privacy-policy.html">
+        <strong>개인정보처리방침</strong>
+        <span>앱에서 처리하는 개인정보와 학습 데이터의 기준을 안내합니다.</span>
+      </a>
+      <a class="link-card" href="./terms-of-service.html">
+        <strong>이용약관</strong>
+        <span>한자쏘옥 서비스 이용 조건과 책임 범위를 안내합니다.</span>
+      </a>
+      <a class="link-card" href="./account-deletion.html">
+        <strong>계정 및 데이터 삭제</strong>
+        <span>계정 삭제와 데이터 삭제 요청 방법을 안내합니다.</span>
+      </a>
+      <a class="link-card" href="./support.html">
+        <strong>고객지원</strong>
+        <span>앱 이용 문의와 개인정보 문의 접수 방법을 안내합니다.</span>
+      </a>
+      <a class="link-card" href="./open-source-notices.html">
+        <strong>오픈소스 고지</strong>
+        <span>앱에 포함된 공개 데이터와 외부 라이선스 고지를 제공합니다.</span>
+      </a>
+    </section>
+
+    <footer>
+      Copyright 2026 Hanja Soook. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
